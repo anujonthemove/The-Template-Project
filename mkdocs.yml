@@ -1,1 +1,47 @@
-site_name: My Docs
+site_name: The Template Project
+site_description: The Template Project
+
+repo_url: https://github.com/anujonthemove/The-Template-Project/
+repo_name: anujonthemove/The-Template-Project
+
+
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - navigation.tabs.sticky
+    
+  palette:
+    primary: indigo
+    # accent: indigo
+  font:
+    text: Roboto Mono
+
+    # # Palette toggle for light mode
+    # - scheme: default
+    #   toggle:
+    #     icon: material/brightness-7 
+    #     name: Switch to dark mode
+
+    # # Palette toggle for dark mode
+    # - scheme: slate
+    #   toggle:
+    #     icon: material/brightness-4
+    #     name: Switch to light mode
+
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.magiclink
+  
+
+nav:
+  - Home: 'index.md'
